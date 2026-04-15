@@ -1,12 +1,12 @@
 provider "aws" {
-  region = "us-east-1"
+  region = "ap-south-1"
 }
 
 resource "aws_s3_bucket" "bucket1" {
-  bucket = "swiggy111"
+  bucket = "Aa_swiggy111"
 
   tags = {
-    Name        = "swiggy111"
+    Name        = "Aa_swiggy111"
     Environment = "dev"
   }
 }
@@ -19,10 +19,10 @@ resource "aws_s3_bucket_versioning" "bucket1_versioning" {
 }
 
 resource "aws_s3_bucket" "bucket2" {
-  bucket = "swiggy222"
+  bucket = "Aa_swiggy222"
 
   tags = {
-    Name        = "swiggy222"
+    Name        = "Aa_swiggy222"
     Environment = "dev"
   }
 }

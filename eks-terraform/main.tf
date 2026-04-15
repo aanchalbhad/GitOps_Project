@@ -1,11 +1,11 @@
 
 provider "aws" {
-  region = "us-east-1" # Specify your desired region
+  region = "ap-south-1" # Specify your desired region
 }
 
 #Creating IAM role for EKS
 resource "aws_iam_role" "master" {
-  name = "yaswanth-eks-master1"
+  name = "aanchal-eks-master1"
 
   assume_role_policy = jsonencode({
     "Version" : "2012-10-17",
@@ -37,7 +37,7 @@ resource "aws_iam_role_policy_attachment" "AmazonEKSVPCResourceController" {
 }
 
 resource "aws_iam_role" "worker" {
-  name = "yaswanth-eks-worker1"
+  name = "aanchal-eks-worker1"
 
   assume_role_policy = jsonencode({
     "Version" : "2012-10-17",
